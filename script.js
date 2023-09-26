@@ -51,7 +51,7 @@ async function gotLocation(position) {
 
     cityName.innerText = `🌆  ${result.location.name}, ${result.location.region} - ${result.location.country}`;
     cityTime.innerText = `🕒  ${result.location.localtime}`;
-    cityTemperature.innerText = `🌡️  ${result.current.temp_c}°C condition is ${result.current.condition.text}`;
+    cityTemperature.innerText = `🌡️  ${result.current.temp_c}°C`;
   } catch (error) {
     alert(`Error: ${error.message}`);
   }
@@ -74,7 +74,7 @@ button.addEventListener("click", async () => {
 
       cityName.innerText = `🌆  ${result.location.name}, ${result.location.region} - ${result.location.country}`;
       cityTime.innerText = `🕒  ${result.location.localtime}`;
-      cityTemperature.innerText = `🌡️  ${result.current.temp_c}°C condition is ${result.current.condition.text}`;
+      cityTemperature.innerText = `🌡️  ${result.current.temp_c}°C`;
     } catch (error) {
       alert(`Error: ${error.message}`);
     }
